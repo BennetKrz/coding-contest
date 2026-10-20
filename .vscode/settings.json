@@ -1,8 +1,5 @@
 {
-  // Use the Nix-provided SDK instead of letting the C# extension download one
-  // (downloaded binaries don't run on NixOS without nix-ld).
-  "dotnet.dotnetPath": "${workspaceFolder}/.dotnet",
-  "dotnetAcquisitionExtension.existingDotnetPath": [
+    "dotnetAcquisitionExtension.existingDotnetPath": [
     { "extensionId": "ms-dotnettools.csharp", "path": "${workspaceFolder}/.dotnet/dotnet" },
     { "extensionId": "ms-dotnettools.csdevkit", "path": "${workspaceFolder}/.dotnet/dotnet" }
   ]
